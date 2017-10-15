@@ -5,12 +5,12 @@ author: "Farhana chowdhury Tondra,Syeda Farha Shazmeen"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  
-%\VignetteIndexEntry{A package implementation of ridgereg(), dplyr and the caret package}
-%\VignetteEngine{knitr::knitr}
-%\VignetteEngine{knitr::rmarkdown}
-%\VignetteEncoding{UTF-8}{inputenc}
+  %\VignetteIndexEntry{Vigenette for ridgereg}
+  %\VignetteEngine{knitr::knitr}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}{inputenc}
 ---
+
   
   **RCourseLab7** is entitled for understanding of machine learning in R. The package consists of Ridge regression and plotting a large dataset using ggplot and dplyr and also a evaluating three models based on a large dataset.  
   
