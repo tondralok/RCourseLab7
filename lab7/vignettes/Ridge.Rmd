@@ -175,7 +175,7 @@ This is about how the whole package is made of and how to read it and implement 
 This package can be installed using below command    
 
 ```{r,, eval=FALSE}
-devtools::install_github("tondralok/GoogleAPI/Geocode")
+devtools::install_github("tondralok/RCOurseLab7/lab7")
 ```
 
 
