@@ -11,16 +11,18 @@ vignette: >
   %\VignetteEncoding{UTF-8}{inputenc}
   
 ---
-```{r}
+
+The caret package is used for classification and regression.
+
+```{r, eval=FALSE}
 library(mlbench)
 library(caret)
 library(leaps)
 library(lab7)
 data("BostonHousing")
 ```
-The caret package is used for classification and regression.
 
-## 1. Divide the BostonHousing data (or your own API data) into a test and training dataset using the caret package.
+### 1. Divide the BostonHousing data (or your own API data) into a test and training dataset using the caret package.
 
 Dividing the BostonHousing data into 70% training and 30% test data 
 
@@ -43,7 +45,7 @@ nrow(Testdata)
 
 
 
-## 2. Fit a linear regression model and a linear regression model with forward selection of covariates on the training dataset.
+### 2. Fit a linear regression model and a linear regression model with forward selection of covariates on the training dataset.
 
 The first two arguments of the train function are **predictor** and **outcome** data objects.Traincontrol object in train allows us to specify the resampling method.The resampling method used here is **cv-cross validation**. <br/>
 For our analysis we have taken crim variable . R-squared  and RMSE(Root Mean Square Error)is used measure model performance. RSME values is low with  5.706505.
@@ -73,11 +75,11 @@ ridge <- caret::train(crim~.,
 print(ridge)
 ```
 
-## 3. Evaluate the performance of this model on the training dataset.
+### 3. Evaluate the performance of this model on the training dataset.
 
 Since **the RMSE & MAE is low on training of lm model compared to leapForward lm where model has good perfomance with nvmax(number of predictors) we can conclude that LM is better than leapforward LM.**
 
-##4. Fit a ridge regression model using your ridgereg() function to the training dataset for different values of lambda.
+###4. Fit a ridge regression model using your ridgereg() function to the training dataset for different values of lambda.
 
 
 ```{r}
@@ -141,7 +143,7 @@ So, **the best hyperparameter value for lambda is 0.03**
 
 
 
-## 6. Evaluate the performance of all three models on the test dataset.
+### 6. Evaluate the performance of all three models on the test dataset.
 
 After evaluating datasets, it can be stated that **ridge regression model is better than lm and lm leapforward regression as it gives lower RMSE.**
 
