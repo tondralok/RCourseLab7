@@ -16,7 +16,8 @@ Suggests: testthat,
           rmarkdown
 Depends: R (>= 2.10),
          dplyr,
-         ggplot2
+         ggplot2,
+         caret
 VignetteBuilder: knitr
 Imports: methods,
          MASS,
